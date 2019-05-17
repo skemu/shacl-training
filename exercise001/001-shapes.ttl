@@ -1,0 +1,17 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix hero: <http://data.superheros.com/def/superhero#> .
+@prefix ss: <http://data.superheros.com/id/shape/> .
+@prefix : <http://data.superheros.com/id/superhero/> .
+
+ss:SupermanShape a sh:NodeShape ;
+  #-- yoohooo.. insert here --#
+  sh:property [
+    sh:path schema:gender ;
+    sh:hasValue schema:Male ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "Should have one gender: Male" ;
+  ] ;
+.

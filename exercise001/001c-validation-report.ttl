@@ -1,0 +1,33 @@
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix hero: <http://data.superheros.com/def/superhero#> .
+@prefix ss: <http://data.superheros.com/id/shape/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:HasValueConstraintComponent ;
+	sh:sourceShape _:n680 ;
+	sh:focusNode <http://data.superheros.com/id/superhero/Superman> ;
+	sh:resultPath schema:gender ;
+	sh:resultMessage "Should have one gender: Male" ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:HasValueConstraintComponent ;
+	sh:sourceShape _:n680 ;
+	sh:focusNode <http://data.superheros.com/id/superhero/WonderWoman> ;
+	sh:resultPath schema:gender ;
+	sh:resultMessage "Should have one gender: Male" ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+	sh:sourceShape _:n680 ;
+	sh:focusNode <http://data.superheros.com/id/superhero/WonderWoman> ;
+	sh:resultPath schema:gender ;
+	sh:resultMessage "Should have one gender: Male" ;
+] .

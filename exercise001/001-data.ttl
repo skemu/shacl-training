@@ -1,0 +1,16 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix hero: <http://data.superheros.com/def/superhero#> .
+@prefix : <http://data.superheros.com/id/superhero/> .
+
+:Superman 
+  rdfs:label "Superman" ;
+  schema:gender schema:Female  ;
+.
+
+:WonderWoman a hero:Superhero ;
+  rdfs:label "Wonder woman" ;
+.
+
+:Catwoman a hero:Superhero ;
+.
