@@ -6,7 +6,7 @@
 @prefix : <http://data.superheros.com/id/superhero/> .
 
 ss:SupermanShape a sh:NodeShape ;
-  #-- yoohooo.. insert here --#
+  #-- insert here --#
   sh:property [
     sh:path schema:gender ;
     sh:hasValue schema:Male ;
