@@ -174,3 +174,5 @@ __Shapes__:
 .
 ```
 
+## Next
+[--> Exercise 004](exercise004)
