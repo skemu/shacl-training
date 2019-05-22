@@ -179,4 +179,4 @@ __Validation result__:
 Woohoo! You now know how to target data for validation using SHACL shapes.
 
 ## Next
-[--> Exercise 002](exercise002)
+[--> Exercise 003](exercise003)
